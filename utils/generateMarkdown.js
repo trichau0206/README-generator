@@ -1,5 +1,5 @@
 // Create a function that returns a license badge based on which license is passed in
-function renderLicenseBadge(license) {
+function badge(license) {
   if (license !== "None") {
     return `![Badge](https://img.shields.io/badge/License-${license}-blue.svg)`
   }
@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
 }
 
 // Create a function that returns the license link
-function renderLicenseLink(license) {
+function link(license) {
   if (license !== "None") {
     return `- [License](#license)`
   }
@@ -15,7 +15,7 @@ function renderLicenseLink(license) {
 }
 
 //  Create a function that returns the license section of README
-function renderLicenseSection(license) {
+function section(license) {
   if (license !== "None") {
     return `## License
     This application is covered by the ${license} license.`
@@ -59,9 +59,9 @@ function generateMarkdown(data) {
   
   ## Questions 
   If there are any questions, feel free to contact my email at: ${data.email}
-  You can also find me on GitHub at: [${data.github}](https://github.com/trichau0206})
+  You can also find me on GitHub at: [${data.github}](https://github.com/trichau0206})]
   ## Deployed Application 
-  This application was deplopyed at [${data.deploy}](${data.deploy})
+  This application was deplopyed at [${data.deploy}](${data.deploy})]
 `;
 }
 
